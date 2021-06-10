@@ -1,0 +1,7 @@
+
+project_name: 'radar'
+
+builds:
+  - main: './cmd/demo/main.go'
+    env:
+      - CGO_ENABLED=0
