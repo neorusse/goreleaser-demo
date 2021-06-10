@@ -1,1 +1,1 @@
-Go Releaser Demo
+Go Releaser Demo for Radar
