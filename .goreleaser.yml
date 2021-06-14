@@ -12,9 +12,6 @@ builds:
       - darwin
       - linux
       - windows
-      - freebsd
-      - openbsd
-      - solaris
 checksum:
   name_template: 'checksums.txt'
 release:
