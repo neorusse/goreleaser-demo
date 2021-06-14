@@ -1,8 +1,9 @@
 name: radar
 
 on:
-  pull_request:
   push:
+    tags:
+      - "*"
 
 permissions:
   contents: write

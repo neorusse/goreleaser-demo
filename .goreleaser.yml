@@ -1,7 +1,21 @@
-
-project_name: 'radar'
-
+before:
+  hooks:
+    - go mod tidy
 builds:
-  - main: './cmd/demo/main.go'
+  - main: ./cmd/demo/main.go
     env:
       - CGO_ENABLED=0
+    goarch:
+      - amd64
+      - arm
+    goos:
+      - darwin
+      - linux
+      - windows
+      - freebsd
+      - openbsd
+      - solaris
+checksum:
+  name_template: 'checksums.txt'
+release:
+  prerelease: auto
